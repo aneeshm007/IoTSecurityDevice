@@ -1,0 +1,69 @@
+\documentclass[border=10pt]{standalone}%{article}
+%\usepackage[margin=1cm]{geometry}
+\usepackage{pgfgantt}
+\usepackage{graphicx}
+\usepackage{xcolor}
+%\usetikzlibrary{positioning}
+
+\ganttset{group/.append style={orange},
+milestone/.append style={red},
+progress label node anchor/.append style={text=red}}
+
+\begin{document}
+
+%    \begin{figure}
+%    \centering
+     \begin{ganttchart}[%Specs
+     y unit title=0.5cm,
+     y unit chart=0.7cm,
+     vgrid,hgrid,
+     title height=1,
+%     title/.style={fill=none},
+     title label font=\bfseries\footnotesize,
+     bar/.style={fill=blue},
+     bar height=0.7,
+%   progress label text={},
+     group right shift=0,
+     group top shift=0.7,
+     group height=.3,
+     group peaks width={0.2},
+     inline]{1}{45}
+    %labels
+    \gantttitle{IOT Security Device}{45}\\  % title 1
+    \gantttitle[]{Weeks 1-7 }{21}                 % title 2
+    \gantttitle[]{Weeks 8-15}{24} \\              
+    \gantttitle{W1}{3}                      % title 3
+    \gantttitle{W2}{3}
+    \gantttitle{W3}{3}
+    \gantttitle{W4}{3}
+    \gantttitle{W5}{3}
+    \gantttitle{W6}{3}
+    \gantttitle{W7}{3} 
+    \gantttitle{W8}{3}
+    \gantttitle{W9}{3}
+    \gantttitle{W10}{3}    
+    \gantttitle{W11}{3}
+    \gantttitle{W12}{3}
+    \gantttitle{W13}{3}     
+    \gantttitle{W14}{3}      
+    \gantttitle{W15}{3}\\
+    % Setting group if any
+    \ganttgroup[inline=false]{Java}{1}{6}\\ 
+    \ganttbar[progress=10,inline=false]{Planning}{1}{4}\\
+    \ganttmilestone[inline=false]{Implementing Security}{9} \\
+
+    \ganttgroup[inline=false]{Python}{1}{6} \\ 
+    \ganttbar[progress=2,inline=false]{test1}{1}{6} \\
+    \ganttmilestone[inline=false]{Milestone 2}{17} \\
+    \ganttbar[progress=5,inline=false]{test2}{1}{6} \\
+    \ganttmilestone[inline=false]{Milestone 3}{22} \\       
+
+    \ganttgroup[inline=false]{VHDL}{1}{6} \\ 
+    \ganttbar[progress=90,inline=false]{Program MSP430}{1}{6} \\ 
+    \ganttbar[progress=50,inline=false, bar progress label node/.append style={below left= 10pt and 7pt}]{Task B}{1}{6} \\ \\
+    \ganttbar[progress=30,inline=false]{Task C}{1}{6}\\ 
+    \ganttbar[progress=70,inline=false]{Task D}{1}{6} \\ 
+\end{ganttchart}
+%    \caption{Gantt diagram for 2013--2014 Project}
+%\end{figure}
+\end{document}
