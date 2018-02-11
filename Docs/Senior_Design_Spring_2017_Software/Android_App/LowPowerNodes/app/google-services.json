@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "844302514409",
+    "firebase_url": "https://lowpowernodes-8f953.firebaseio.com",
+    "project_id": "lowpowernodes-8f953",
+    "storage_bucket": "lowpowernodes-8f953.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844302514409:android:719ae101364e7433",
+        "android_client_info": {
+          "package_name": "gmu.lowpowernodes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844302514409-7cc8u6v2412nrnh8ht9eeo2is0n5e8fp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gmu.lowpowernodes",
+            "certificate_hash": "7c211a5441a121ee3ba671fc946ae4005bc59daf"
+          }
+        },
+        {
+          "client_id": "844302514409-ngsjtq6kdoeq0kflstf87lqifkiiqa0c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8HAIU5rUnWLYrf1o3WlbBTBbA9jdGrZM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844302514409-ngsjtq6kdoeq0kflstf87lqifkiiqa0c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

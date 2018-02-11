@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\STUDY\\Apps_dropbox\\app\\LowPowerNodes\\dropboxChooserSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\bottom_bar_light.xml",
+        "source": "E:\\STUDY\\Apps_dropbox\\app\\LowPowerNodes\\dropboxChooserSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\bottom_bar_light.xml"
+    },
+    {
+        "merged": "E:\\STUDY\\Apps_dropbox\\app\\LowPowerNodes\\dropboxChooserSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\bottom_buttons_light.xml",
+        "source": "E:\\STUDY\\Apps_dropbox\\app\\LowPowerNodes\\dropboxChooserSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\bottom_buttons_light.xml"
+    },
+    {
+        "merged": "E:\\STUDY\\Apps_dropbox\\app\\LowPowerNodes\\dropboxChooserSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\app_store_interstitial.xml",
+        "source": "E:\\STUDY\\Apps_dropbox\\app\\LowPowerNodes\\dropboxChooserSDK\\build\\intermediates\\bundles\\debug\\res\\layout\\app_store_interstitial.xml"
+    }
+]

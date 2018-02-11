@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "E:\\STUDY\\Apps_dropbox\\app\\LowPowerNodes\\dropboxChooserSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\common_button_light_gray.xml",
+        "source": "E:\\STUDY\\Apps_dropbox\\app\\LowPowerNodes\\dropboxChooserSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\common_button_light_gray.xml"
+    },
+    {
+        "merged": "E:\\STUDY\\Apps_dropbox\\app\\LowPowerNodes\\dropboxChooserSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\common_bar_light_gray_bottom.xml",
+        "source": "E:\\STUDY\\Apps_dropbox\\app\\LowPowerNodes\\dropboxChooserSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\common_bar_light_gray_bottom.xml"
+    },
+    {
+        "merged": "E:\\STUDY\\Apps_dropbox\\app\\LowPowerNodes\\dropboxChooserSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\common_button_green.xml",
+        "source": "E:\\STUDY\\Apps_dropbox\\app\\LowPowerNodes\\dropboxChooserSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\common_button_green.xml"
+    }
+]

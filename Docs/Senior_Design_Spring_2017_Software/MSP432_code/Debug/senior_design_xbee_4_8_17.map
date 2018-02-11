@@ -1,0 +1,485 @@
+******************************************************************************
+                  TI ARM Linker PC v15.12.3                    
+******************************************************************************
+>> Linked Sat May 06 14:21:04 2017
+
+OUTPUT FILE NAME:   <senior_design_xbee_4_8_17.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00001bbd
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  MAIN                  00000000   00040000  00002372  0003dc8e  R  X
+  INFO                  00200000   00004000  00000000  00004000  R  X
+  SRAM_CODE             01000000   00010000  00000000  00010000  RW X
+  SRAM_DATA             20000000   00010000  0000f281  00000d7f  RW  
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00000000    00000000    00002374   00002374    r-x
+  00000000    00000000    00000140   00000140    r-- .intvecs
+  00000140    00000140    00001e66   00001e66    r-x .text
+  00001fa8    00001fa8    00000338   00000338    r-- .const
+  000022e0    000022e0    00000094   00000094    r-- .cinit
+20000000    20000000    0000f081   00000000    rw-
+  20000000    20000000    0000f000   00000000    rw- .bss
+  2000f000    2000f000    00000081   00000000    rw- .data
+2000fe00    2000fe00    00000200   00000000    rw-
+  2000fe00    2000fe00    00000200   00000000    rw- .stack
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.intvecs   0    00000000    00000140     
+                  00000000    00000140     startup_msp432p401r_ccs.obj (.intvecs:retain)
+
+.text      0    00000140    00001e66     
+                  00000140    000009c0     xbee_driver.obj (.text)
+                  00000b00    00000444     i2c_driver.obj (.text)
+                  00000f44    00000328     system_msp432p401r.obj (.text)
+                  0000126c    00000268     ov2640_driver.obj (.text)
+                  000014d4    00000130     spi_driver.obj (.text)
+                  00001604    00000104     msp432p4xx_driverlib.lib : cs.o (.text:CS_getDCOFrequency)
+                  00001708    00000100     main.obj (.text)
+                  00001808    0000009c     msp432p4xx_driverlib.lib : cs.o (.text:_CSComputeCLKFrequency)
+                  000018a4    0000009c     motion_sensor.obj (.text)
+                  00001940    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.obj (.text)
+                  000019dc    00000088     msp432p4xx_driverlib.lib : spi.o (.text:SPI_initMaster)
+                  00001a64    0000007a     rtsv7M4_T_le_v4SPD16_eabi.lib : memset_t2.obj (.text)
+                  00001ade    00000002                                   : mpu_init.obj (.text)
+                  00001ae0    00000070                                   : autoinit.obj (.text)
+                  00001b50    0000006a                                   : copy_decompress_rle.obj (.text)
+                  00001bba    00000002                                   : startup.obj (.text)
+                  00001bbc    00000054                                   : boot.obj (.text)
+                  00001c10    00000054                                   : exit.obj (.text)
+                  00001c64    00000050     msp432p4xx_driverlib.lib : sysctl.o (.text:SysCtl_getTLVInfo)
+                  00001cb4    0000004c                              : gpio.o (.text:GPIO_setAsPeripheralModuleFunctionOutputPin)
+                  00001d00    0000004c                              : cs.o (.text:_CSGetDOCFrequency)
+                  00001d4c    0000004c     rtsv7M4_T_le_v4SPD16_eabi.lib : cpy_tbl.obj (.text)
+                  00001d98    00000048     msp432p4xx_driverlib.lib : gpio.o (.text:GPIO_setAsPeripheralModuleFunctionInputPin)
+                  00001de0    00000048                              : cs.o (.text:_CSGetDividerValue)
+                  00001e28    00000030                              : spi.o (.text:is_A_Module)
+                  00001e58    00000026     rtsv7M4_T_le_v4SPD16_eabi.lib : strncmp.obj (.text)
+                  00001e7e    00000002     --HOLE-- [fill = 0]
+                  00001e80    00000024     msp432p4xx_driverlib.lib : cs.o (.text:CS_clearInterruptFlag)
+                  00001ea4    00000024                              : cs.o (.text:CS_setDCOCenteredFrequency)
+                  00001ec8    00000024                              : gpio.o (.text:GPIO_setAsOutputPin)
+                  00001eec    0000001a                              : spi.o (.text:SPI_enableModule)
+                  00001f06    00000002     --HOLE-- [fill = 0]
+                  00001f08    00000018                              : cs.o (.text:CS_getSMCLK)
+                  00001f20    00000018                              : gpio.o (.text:GPIO_setOutputLowOnPin)
+                  00001f38    00000018     rtsv7M4_T_le_v4SPD16_eabi.lib : args_main.obj (.text)
+                  00001f50    00000014                                   : _lock.obj (.text)
+                  00001f64    00000012     startup_msp432p401r_ccs.obj (.text)
+                  00001f76    0000000e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_none.obj (.text:decompress:none)
+                  00001f84    0000000c     msp432p4xx_driverlib.lib : spi.o (.text:EUSCI_A_SPI_enable)
+                  00001f90    0000000c                              : spi.o (.text:EUSCI_B_SPI_enable)
+                  00001f9c    00000006     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_rle.obj (.text:decompress:rle24)
+                  00001fa2    00000004                                   : pre_init.obj (.text)
+
+.const     0    00001fa8    00000338     
+                  00001fa8    0000017e     ov2640_driver.obj (.const:OV2640_JPEG_INIT)
+                  00002126    00000002     --HOLE-- [fill = 0]
+                  00002128    00000082     xbee_driver.obj (.const:.string)
+                  000021aa    00000052     ov2640_driver.obj (.const:OV2640_640x480_JPEG)
+                  000021fc    00000024     xbee_driver.obj (.const:uartConfig)
+                  00002220    00000024     xbee_driver.obj (.const:uartConfig_image)
+                  00002244    00000014     ov2640_driver.obj (.const:OV2640_YUV422)
+                  00002258    00000012     ov2640_driver.obj (.const:OV2640_JPEG)
+                  0000226a    00000002     --HOLE-- [fill = 0]
+                  0000226c    00000010     xbee_driver.obj (.const:EE_CMD)
+                  0000227c    00000010     xbee_driver.obj (.const:ID_CMD)
+                  0000228c    00000010     xbee_driver.obj (.const:KY_CMD)
+                  0000229c    00000010     xbee_driver.obj (.const:OI_CMD)
+                  000022ac    00000010     xbee_driver.obj (.const:RE_CMD)
+                  000022bc    00000010     xbee_driver.obj (.const:SH_CMD)
+                  000022cc    00000010     xbee_driver.obj (.const:SL_CMD)
+                  000022dc    00000004     xbee_driver.obj (.const:.string:$P$T0$1)
+
+.cinit     0    000022e0    00000094     
+                  000022e0    00000069     (.cinit..data.load) [load image, compression = rle]
+                  00002349    00000007     --HOLE-- [fill = 0]
+                  00002350    0000000b     (.cinit..bss.load) [load image, compression = rle]
+                  0000235b    00000001     --HOLE-- [fill = 0]
+                  0000235c    00000008     (__TI_handler_table)
+                  00002364    00000010     (__TI_cinit_table)
+
+.init_array 
+*          0    00000000    00000000     UNINITIALIZED
+
+.bss       0    20000000    0000f000     UNINITIALIZED
+                  20000000    0000ea60     (.common:image_buffer)
+                  2000ea60    000000c8     (.common:RXBuffer)
+                  2000eb28    00000020     (.common:session_key)
+                  2000eb48    00000018     (.common:x_coord)
+                  2000eb60    00000018     (.common:y_coord)
+                  2000eb78    00000004     (.common:g_ui32ByteCount)
+                  2000eb7c    00000004     (.common:hfxtFreq)
+                  2000eb80    00000004     (.common:lfxtFreq)
+                  2000eb84    00000004     (.common:pData)
+                  2000eb88    00000004     (.common:pan_id)
+                  2000eb8c    00000001     (.common:ui8DummyRead)
+                  2000eb8d    00000001     (.common:ui8Status)
+                  2000eb8e    00000072     --HOLE--
+                  2000ec00    00000400     (.common:controlTable)
+
+.data      0    2000f000    00000081     UNINITIALIZED
+                  2000f000    00000030     msp432p4xx_driverlib.lib : gpio.o (.data:GPIO_PORT_TO_BASE)
+                  2000f030    0000001c     spi_driver.obj (.data:spiConfig)
+                  2000f04c    00000014     i2c_driver.obj (.data:i2cConfig)
+                  2000f060    0000000c     rtsv7M4_T_le_v4SPD16_eabi.lib : exit.obj (.data:$O1$$)
+                  2000f06c    00000008                                   : _lock.obj (.data:$O1$$)
+                  2000f074    00000004                                   : stkdepth_vars.obj (.data)
+                  2000f078    00000004     system_msp432p401r.obj (.data)
+                  2000f07c    00000003     xbee_driver.obj (.data:OK_RESPONSE)
+                  2000f07f    00000001     i2c_driver.obj (.data)
+                  2000f080    00000001     main.obj (.data)
+
+.stack     0    2000fe00    00000200     UNINITIALIZED
+                  2000fe00    00000200     --HOLE--
+
+MODULE SUMMARY
+
+       Module                        code   ro data   rw data
+       ------                        ----   -------   -------
+    .\
+       ov2640_driver.obj             616    502       60000  
+       xbee_driver.obj               2496   318       1227   
+       i2c_driver.obj                1092   0         31     
+       system_msp432p401r.obj        808    0         4      
+       main.obj                      256    0         85     
+       startup_msp432p401r_ccs.obj   18     320       0      
+       spi_driver.obj                304    0         28     
+       motion_sensor.obj             156    0         0      
+    +--+-----------------------------+------+---------+---------+
+       Total:                        5746   1140      61375  
+                                                             
+    C:/ti/tirex-content/msp/msp432ware__3.50.00.02/driverlib/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib
+       cs.o                          660    0         8      
+       gpio.o                        208    0         48     
+       spi.o                         234    0         0      
+       sysctl.o                      80     0         0      
+    +--+-----------------------------+------+---------+---------+
+       Total:                        1182   0         56     
+                                                             
+    C:\ti\ccsv6\tools\compiler\arm_15.12.3.LTS\lib\rtsv7M4_T_le_v4SPD16_eabi.lib
+       memcpy_t2.obj                 156    0         0      
+       memset_t2.obj                 122    0         0      
+       autoinit.obj                  112    0         0      
+       copy_decompress_rle.obj       112    0         0      
+       exit.obj                      84     0         12     
+       boot.obj                      84     0         0      
+       cpy_tbl.obj                   76     0         0      
+       strncmp.obj                   38     0         0      
+       _lock.obj                     20     0         8      
+       args_main.obj                 24     0         0      
+       copy_decompress_none.obj      14     0         0      
+       pre_init.obj                  4      0         0      
+       stkdepth_vars.obj             0      0         4      
+       mpu_init.obj                  2      0         0      
+       startup.obj                   2      0         0      
+    +--+-----------------------------+------+---------+---------+
+       Total:                        850    0         24     
+                                                             
+       Stack:                        0      0         512    
+       Linker Generated:             0      140       0      
+    +--+-----------------------------+------+---------+---------+
+       Grand Total:                  7778   1280      61967  
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 00002364 records: 2, size/record: 8, table size: 16
+	.data: load addr=000022e0, load size=00000069 bytes, run addr=2000f000, run size=00000081 bytes, compression=rle
+	.bss: load addr=00002350, load size=0000000b bytes, run addr=20000000, run size=0000f000 bytes, compression=rle
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 0000235c records: 2, size/record: 4, table size: 8
+	index: 0, handler: __TI_decompress_rle24
+	index: 1, handler: __TI_decompress_none
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address   name                                       
+-------   ----                                       
+00001c11  C$$EXIT                                    
+00001e81  CS_clearInterruptFlag                      
+00001605  CS_getDCOFrequency                         
+00001f09  CS_getSMCLK                                
+00001ea5  CS_setDCOCenteredFrequency                 
+0000226c  EE_CMD                                     
+00000a61  EUSCIA2_IRQHandler                         
+00000e49  EUSCIB1_IRQHandler                         
+00001f85  EUSCI_A_SPI_enable                         
+00001f91  EUSCI_B_SPI_enable                         
+00001ec9  GPIO_setAsOutputPin                        
+00001d99  GPIO_setAsPeripheralModuleFunctionInputPin 
+00001cb5  GPIO_setAsPeripheralModuleFunctionOutputPin
+00001f21  GPIO_setOutputLowOnPin                     
+0000227c  ID_CMD                                     
+0000228c  KY_CMD                                     
+0000229c  OI_CMD                                     
+2000f07c  OK_RESPONSE                                
+000021aa  OV2640_640x480_JPEG                        
+00002258  OV2640_JPEG                                
+00001fa8  OV2640_JPEG_INIT                           
+00002244  OV2640_YUV422                              
+000017c1  PORT3_IRQHandler                           
+000022ac  RE_CMD                                     
+2000ea60  RXBuffer                                   
+UNDEFED   SHT$$INIT_ARRAY$$Base                      
+UNDEFED   SHT$$INIT_ARRAY$$Limit                     
+000022bc  SH_CMD                                     
+000022cc  SL_CMD                                     
+00001eed  SPI_enableModule                           
+000019dd  SPI_initMaster                             
+00001c65  SysCtl_getTLVInfo                          
+2000f078  SystemCoreClock                            
+00000f45  SystemCoreClockUpdate                      
+000011b9  SystemInit                                 
+4000480c  WDTCTL_SYM                                 
+20010000  __STACK_END                                
+00000200  __STACK_SIZE                               
+00002364  __TI_CINIT_Base                            
+00002374  __TI_CINIT_Limit                           
+0000235c  __TI_Handler_Table_Base                    
+00002364  __TI_Handler_Table_Limit                   
+00001ae1  __TI_auto_init                             
+2000f060  __TI_cleanup_ptr                           
+00001f77  __TI_decompress_none                       
+00001f9d  __TI_decompress_rle24                      
+2000f064  __TI_dtors_ptr                             
+2000f068  __TI_enable_exit_profile_output            
+ffffffff  __TI_pprof_out_hndl                        
+ffffffff  __TI_prof_data_size                        
+ffffffff  __TI_prof_data_start                       
+00000000  __TI_static_base__                         
+00001a65  __aeabi_memclr                             
+00001a65  __aeabi_memclr4                            
+00001a65  __aeabi_memclr8                            
+00001941  __aeabi_memcpy                             
+00001941  __aeabi_memcpy4                            
+00001941  __aeabi_memcpy8                            
+00001a67  __aeabi_memset                             
+00001a67  __aeabi_memset4                            
+00001a67  __aeabi_memset8                            
+ffffffff  __binit__                                  
+ffffffff  __c_args__                                 
+00001adf  __mpu_init                                 
+2000fe00  __stack                                    
+00001f39  _args_main                                 
+00001bbd  _c_int00                                   
+2000f06c  _lock                                      
+00001f5f  _nop                                       
+00001f57  _register_lock                             
+00001f51  _register_unlock                           
+00001bbb  _system_post_cinit                         
+00001fa3  _system_pre_init                           
+2000f070  _unlock                                    
+00001c15  abort                                      
+ffffffff  binit                                      
+2000f07f  burstMode                                  
+000013f1  capture_image                              
+2000f080  capture_req                                
+2000ec00  controlTable                               
+00001d4d  copy_in                                    
+00001c1d  exit                                       
+2000eb78  g_ui32ByteCount                            
+00000839  hex_array_to_ascii                         
+000007c5  hex_to_char                                
+2000f04c  i2cConfig                                  
+20000000  image_buffer                               
+00000b01  initI2C                                    
+00000141  init_DMA                                   
+00001319  init_OV2640_regs                           
+00001709  init_SMCLK                                 
+000001ad  init_XBEE                                  
+000013cd  init_ov2640                                
+00000000  interruptVectors                           
+0000171f  main                                       
+2000f074  main_func_sp                               
+00001941  memcpy                                     
+00001a6d  memset                                     
+000018df  motion_sensor_disable                      
+0000190b  motion_sensor_enable                       
+000018a5  motion_sensor_init                         
+00000359  new_read                                   
+2000eb84  pData                                      
+2000eb88  pan_id                                     
+00000d0b  readBurstI2C                               
+00000bef  readI2C                                    
+0000075d  read_coordinates                           
+00000395  reset_dma                                  
+0000126d  sccb_read_reg                              
+000012a5  sccb_write_reg                             
+000012c7  sccb_write_reg_array                       
+2000eb28  session_key                                
+00000981  set_session_key                            
+00000881  setup_node                                 
+2000f030  spiConfig                                  
+00001565  spi_Read                                   
+00001509  spi_Write                                  
+000014d5  spi_init                                   
+00001e59  strncmp                                    
+000004d9  transmit_array                             
+000003f5  transmit_image                             
+000021fc  uartConfig                                 
+00002220  uartConfig_image                           
+2000eb8c  ui8DummyRead                               
+2000eb8d  ui8Status                                  
+0000060d  wait_CR                                    
+00000555  wait_OK                                    
+00000b17  writeI2C                                   
+2000eb48  x_coord                                    
+0000067d  xbee_CMD                                   
+2000eb60  y_coord                                    
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address   name                                       
+-------   ----                                       
+00000000  __TI_static_base__                         
+00000000  interruptVectors                           
+00000141  init_DMA                                   
+000001ad  init_XBEE                                  
+00000200  __STACK_SIZE                               
+00000359  new_read                                   
+00000395  reset_dma                                  
+000003f5  transmit_image                             
+000004d9  transmit_array                             
+00000555  wait_OK                                    
+0000060d  wait_CR                                    
+0000067d  xbee_CMD                                   
+0000075d  read_coordinates                           
+000007c5  hex_to_char                                
+00000839  hex_array_to_ascii                         
+00000881  setup_node                                 
+00000981  set_session_key                            
+00000a61  EUSCIA2_IRQHandler                         
+00000b01  initI2C                                    
+00000b17  writeI2C                                   
+00000bef  readI2C                                    
+00000d0b  readBurstI2C                               
+00000e49  EUSCIB1_IRQHandler                         
+00000f45  SystemCoreClockUpdate                      
+000011b9  SystemInit                                 
+0000126d  sccb_read_reg                              
+000012a5  sccb_write_reg                             
+000012c7  sccb_write_reg_array                       
+00001319  init_OV2640_regs                           
+000013cd  init_ov2640                                
+000013f1  capture_image                              
+000014d5  spi_init                                   
+00001509  spi_Write                                  
+00001565  spi_Read                                   
+00001605  CS_getDCOFrequency                         
+00001709  init_SMCLK                                 
+0000171f  main                                       
+000017c1  PORT3_IRQHandler                           
+000018a5  motion_sensor_init                         
+000018df  motion_sensor_disable                      
+0000190b  motion_sensor_enable                       
+00001941  __aeabi_memcpy                             
+00001941  __aeabi_memcpy4                            
+00001941  __aeabi_memcpy8                            
+00001941  memcpy                                     
+000019dd  SPI_initMaster                             
+00001a65  __aeabi_memclr                             
+00001a65  __aeabi_memclr4                            
+00001a65  __aeabi_memclr8                            
+00001a67  __aeabi_memset                             
+00001a67  __aeabi_memset4                            
+00001a67  __aeabi_memset8                            
+00001a6d  memset                                     
+00001adf  __mpu_init                                 
+00001ae1  __TI_auto_init                             
+00001bbb  _system_post_cinit                         
+00001bbd  _c_int00                                   
+00001c11  C$$EXIT                                    
+00001c15  abort                                      
+00001c1d  exit                                       
+00001c65  SysCtl_getTLVInfo                          
+00001cb5  GPIO_setAsPeripheralModuleFunctionOutputPin
+00001d4d  copy_in                                    
+00001d99  GPIO_setAsPeripheralModuleFunctionInputPin 
+00001e59  strncmp                                    
+00001e81  CS_clearInterruptFlag                      
+00001ea5  CS_setDCOCenteredFrequency                 
+00001ec9  GPIO_setAsOutputPin                        
+00001eed  SPI_enableModule                           
+00001f09  CS_getSMCLK                                
+00001f21  GPIO_setOutputLowOnPin                     
+00001f39  _args_main                                 
+00001f51  _register_unlock                           
+00001f57  _register_lock                             
+00001f5f  _nop                                       
+00001f77  __TI_decompress_none                       
+00001f85  EUSCI_A_SPI_enable                         
+00001f91  EUSCI_B_SPI_enable                         
+00001f9d  __TI_decompress_rle24                      
+00001fa3  _system_pre_init                           
+00001fa8  OV2640_JPEG_INIT                           
+000021aa  OV2640_640x480_JPEG                        
+000021fc  uartConfig                                 
+00002220  uartConfig_image                           
+00002244  OV2640_YUV422                              
+00002258  OV2640_JPEG                                
+0000226c  EE_CMD                                     
+0000227c  ID_CMD                                     
+0000228c  KY_CMD                                     
+0000229c  OI_CMD                                     
+000022ac  RE_CMD                                     
+000022bc  SH_CMD                                     
+000022cc  SL_CMD                                     
+0000235c  __TI_Handler_Table_Base                    
+00002364  __TI_CINIT_Base                            
+00002364  __TI_Handler_Table_Limit                   
+00002374  __TI_CINIT_Limit                           
+20000000  image_buffer                               
+2000ea60  RXBuffer                                   
+2000eb28  session_key                                
+2000eb48  x_coord                                    
+2000eb60  y_coord                                    
+2000eb78  g_ui32ByteCount                            
+2000eb84  pData                                      
+2000eb88  pan_id                                     
+2000eb8c  ui8DummyRead                               
+2000eb8d  ui8Status                                  
+2000ec00  controlTable                               
+2000f030  spiConfig                                  
+2000f04c  i2cConfig                                  
+2000f060  __TI_cleanup_ptr                           
+2000f064  __TI_dtors_ptr                             
+2000f068  __TI_enable_exit_profile_output            
+2000f06c  _lock                                      
+2000f070  _unlock                                    
+2000f074  main_func_sp                               
+2000f078  SystemCoreClock                            
+2000f07c  OK_RESPONSE                                
+2000f07f  burstMode                                  
+2000f080  capture_req                                
+2000fe00  __stack                                    
+20010000  __STACK_END                                
+4000480c  WDTCTL_SYM                                 
+ffffffff  __TI_pprof_out_hndl                        
+ffffffff  __TI_prof_data_size                        
+ffffffff  __TI_prof_data_start                       
+ffffffff  __binit__                                  
+ffffffff  __c_args__                                 
+ffffffff  binit                                      
+UNDEFED   SHT$$INIT_ARRAY$$Base                      
+UNDEFED   SHT$$INIT_ARRAY$$Limit                     
+
+[131 symbols]

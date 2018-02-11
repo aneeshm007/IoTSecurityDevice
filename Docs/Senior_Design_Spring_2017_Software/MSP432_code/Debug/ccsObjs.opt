@@ -1,0 +1,1 @@
+"./i2c_driver.obj" "./main.obj" "./motion_sensor.obj" "./ov2640_driver.obj" "./spi_driver.obj" "./startup_msp432p401r_ccs.obj" "./system_msp432p401r.obj" "./xbee_driver.obj" "../main.cmd" "C:/ti/tirex-content/msp/msp432ware__3.50.00.02/driverlib/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" -llibc.a 
