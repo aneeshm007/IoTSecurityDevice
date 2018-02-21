@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {2}{Introduction of Problem}{3}{0}{1}
+\beamer@sectionintoc {3}{Top-Level Design}{5}{0}{2}
+\beamer@sectionintoc {4}{Top-Level Design}{6}{0}{3}
+\beamer@sectionintoc {5}{FPGA}{7}{0}{4}
+\beamer@sectionintoc {6}{Data Protocols}{11}{0}{5}
+\beamer@sectionintoc {7}{Zigbee}{12}{0}{6}
+\beamer@sectionintoc {8}{Security}{14}{0}{7}
