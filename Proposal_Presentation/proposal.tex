@@ -3,7 +3,7 @@
 % \usepackage{beamerthemesplit} // Activate for custom appearance
 
 \title{OTA Updates for an IOT Security Device}
-\author{Aneesh Malhotra, Ryan Thomas, Sohail Iqbar, Gerson C Dalton, Mohammad Nur}
+\author{Aneesh Malhotra, Ryan Thomas, Sohail Iqbal, Gerson Dalton, Mohammad Nur}
 \date{\today}
 
 \usetheme{Singapore}
@@ -111,7 +111,7 @@
 \end{itemize}
 }
 
-\section{Data Protocols}
+\section{Data Protocols and Memory}
 \frame{
 \frametitle{Data Protocols}
 \begin{itemize}
@@ -121,6 +121,17 @@
 \item $\text{I}^2\text{C}$ and SPI are synchronous transfers, whereas UART is asynchronous and does not require a clock.
 \item SPI can transfer at 16Mbps
 \item UART can transfer at 960kBps
+\end{itemize}
+
+}
+
+\frame{
+\frametitle{Memory}
+\begin{itemize}
+\item The MSP432 has $64 \si{kB}$ RAM.
+\item Both the MSP432 and FPGA have $256 \si{kB}$ of flash memory.
+\item The size of the current system is $222 \si{kB}$, and the picture size is a maximum of $60 \si{kB}$
+\item In order to be able able to support an update we need to have an external memory pool.
 \end{itemize}
 
 }
