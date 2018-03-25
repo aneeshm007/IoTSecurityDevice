@@ -4,8 +4,11 @@
 %\geometry{landscape}                % Activate for for rotated page geometry
 %\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
 \usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
 \usepackage{amssymb}
 \usepackage{epstopdf}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
 \usepackage{tikz}
 \usetikzlibrary{automata,positioning}       
 \usepackage{listings}
@@ -22,18 +25,87 @@
 }   
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
-\title{Conceptual Design}
-\author{Aneesh Malhotra, Ryan Thomas, Mohammed Nur, Sohail Iqbal, Gerson Dalton}
-%\date{}                                           % Activate to display a given date or no date
 
 \begin{document}
-\maketitle
+\begin{titlepage}
 
-\section{Introduction}
-This project will build upon a previous ECE 492 project \textit{FPGA Enhanced Wireless Sensor Node for IoT Applications}. The previous project constructed a motion-triggered wireless sensor node that takes snapshots and sends them over ZigBee to a gateway device. The gateway then sends the image to a Dropbox cloud. This entire process was enhanced by elliptic curve cryptography which was implemented using an Actel Igloo Nano FPGA. 
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
 
-\section{Conceptual Design}
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
 
+\textsc{\LARGE George Mason University}\\[1.5cm] % Name of your university/college
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Implementing OTA Updates for an IoT Security Device}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Authors:}\\
+Gerson \textsc{Dalton Cardozo} \\
+M. Sohail \textsc{Iqbal} \\ 
+Aneesh \textsc{Malhotra} \\ 
+Mohamed \textsc{Nur} \\ 
+Ryan \textsc{Thomas} % Your name 
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+Dr. Jens-Peter \textsc{Kaps} % Supervisor's Name
+\end{flushright}
+\end{minipage}\\[2cm]
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%	DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics{watermark.jpg}\\[1cm] % Include a department/university logo - this will require the graphicx package
+ 
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\section{Executive Summary}
+
+This project will build upon a previous ECE 492 project \textit{FPGA Enhanced Wireless Sensor Node for IoT Applications}. The project sought to create a more secure wireless sensor node network by using an FGPA. In addition to enhancing security, they had the goal of maintaining low power consumption throughout the operation of the network. In the event that this system is compromised, however, we would like to be able to re-secure this device by updating the already existent firmware over-the-air. This will allow for mass distribution of potential updates in the event of a security breech.
+\section{Problem Statement}
+
+(Insert Problem Statement Here)
+
+\section{Approach}
+
+(Insert approach here)
+
+
+
+\section{System Design}
 \subsection{Application} 
 
 \subsubsection{Camera Module}
