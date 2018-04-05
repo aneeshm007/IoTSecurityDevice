@@ -1,8 +1,16 @@
 \beamer@endinputifotherversion {3.36pt}
 \beamer@sectionintoc {2}{Introduction of Problem}{3}{0}{1}
-\beamer@sectionintoc {3}{Top-Level Design}{5}{0}{2}
-\beamer@sectionintoc {4}{Top-Level Design}{6}{0}{3}
-\beamer@sectionintoc {5}{FPGA}{7}{0}{4}
-\beamer@sectionintoc {6}{Data Protocols and Memory}{11}{0}{5}
-\beamer@sectionintoc {7}{Zigbee}{13}{0}{6}
-\beamer@sectionintoc {8}{Security}{15}{0}{7}
+\beamer@subsectionintoc {2}{1}{Motivation}{3}{0}{1}
+\beamer@subsectionintoc {2}{2}{Current System}{4}{0}{1}
+\beamer@sectionintoc {3}{Solution}{7}{0}{2}
+\beamer@sectionintoc {4}{System Design}{8}{0}{3}
+\beamer@sectionintoc {5}{System Components}{10}{0}{4}
+\beamer@subsectionintoc {5}{1}{Microcontroller}{12}{0}{4}
+\beamer@subsectionintoc {5}{2}{FPGA}{14}{0}{4}
+\beamer@subsectionintoc {5}{3}{Updates/YAML}{20}{0}{4}
+\beamer@subsubsectionintoc {5}{3}{1}{Security}{22}{0}{4}
+\beamer@subsectionintoc {5}{4}{Data Protocols and Memory}{23}{0}{4}
+\beamer@sectionintoc {6}{Further Work}{28}{0}{5}
+\beamer@subsectionintoc {6}{1}{Experimental Plan}{29}{0}{5}
+\beamer@sectionintoc {7}{Task Allocation}{30}{0}{6}
+\beamer@sectionintoc {8}{References}{32}{0}{7}

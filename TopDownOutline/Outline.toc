@@ -1,0 +1,23 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Executive Summary}{2}
+\contentsline {section}{\numberline {2}Approach}{3}
+\contentsline {subsection}{\numberline {2.1}Motivation}{3}
+\contentsline {subsection}{\numberline {2.2}Problem Analysis}{3}
+\contentsline {subsection}{\numberline {2.3}Solution}{4}
+\contentsline {subsection}{\numberline {2.4}Components}{4}
+\contentsline {subsection}{\numberline {2.5}Top-Level Design}{5}
+\contentsline {subsection}{\numberline {2.6}Alternative Designs}{6}
+\contentsline {subsubsection}{\numberline {2.6.1}Dropbox}{6}
+\contentsline {section}{\numberline {3}System Architecture}{7}
+\contentsline {subsection}{\numberline {3.1}Method for MSP432}{7}
+\contentsline {subsection}{\numberline {3.2}Method for FPGA}{8}
+\contentsline {subsection}{\numberline {3.3}YAML File}{8}
+\contentsline {section}{\numberline {4}Preliminary Experimental Plan}{8}
+\contentsline {section}{\numberline {5}Preliminary Project Plan}{8}
+\contentsline {subsection}{\numberline {5.1}Tasks}{8}
+\contentsline {subsection}{\numberline {5.2}Allocation of Responsibilities}{9}
+\contentsline {subsubsection}{\numberline {5.2.1}Aneesh}{9}
+\contentsline {subsubsection}{\numberline {5.2.2}Ryan}{9}
+\contentsline {subsubsection}{\numberline {5.2.3}Gerson}{9}
+\contentsline {subsubsection}{\numberline {5.2.4}Mohamed}{9}
+\contentsline {subsubsection}{\numberline {5.2.5}Sohail}{9}

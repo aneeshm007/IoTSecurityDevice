@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  2 FEB 2018 12:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  5 MAR 2018 14:39
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -511,10 +511,10 @@ e
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./gantt.aux) ) 
 Here is how much of TeX's memory you used:
- 13846 strings out of 493014
- 296331 string characters out of 6133351
- 340517 words of memory out of 5000000
- 17144 multiletter control sequences out of 15000+600000
+ 13858 strings out of 493014
+ 296561 string characters out of 6133351
+ 341517 words of memory out of 5000000
+ 17156 multiletter control sequences out of 15000+600000
  4257 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,8n,65p,425b,749s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -522,7 +522,7 @@ Here is how much of TeX's memory you used:
 cm/cmbx8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mr7.pfb>
-Output written on gantt.pdf (1 page, 36539 bytes).
+Output written on gantt.pdf (1 page, 37673 bytes).
 PDF statistics:
  23 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream
